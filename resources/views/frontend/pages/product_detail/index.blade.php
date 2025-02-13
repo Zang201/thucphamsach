@@ -115,7 +115,7 @@
                                 <a href="{{ route('get.shopping.add', $product->id) }}" title=""
                                    class="muangay">
                                     <span>Thêm vào giỏ hàng</span>
-                                    <span>Hotline: 1800.4005</span>
+                                    <span>Hotline: 1800.6005</span>
                                 </a>
                                 <a href="{{ route('ajax_get.user.add_favourite', $product->id) }}"
                                    title="Thêm sản phẩm yêu thích"
