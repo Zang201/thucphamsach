@@ -29,25 +29,7 @@
         <script>
             var DEVICE = '{{  device_agent() }}'
         </script>
-        @yield('script')
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-        
-            <!-- Latest compiled JavaScript -->
-            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-        <script type="text/javascript">
-        $(document).ready(function(){
-
-            $('#sort').on('change',function(){
-
-                var url = $(this).val(); 
-                // alert(url);
-                  if (url) { 
-                      window.location = url;
-                  }
-                return false;
-            });
-
-        }); 
+////////////
         </script>
         <script type="text/javascript">
             $('#keywords').keyup(function(){
