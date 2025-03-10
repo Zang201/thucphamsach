@@ -1,6 +1,7 @@
 @extends('layouts.app_master_admin')
 
 @section('content')
+    <!-- Tiêu đề của trang -->
     <section class="content-header">
         <h1>Thêm mới menu</h1>
         <ol class="breadcrumb">
@@ -10,12 +11,15 @@
         </ol>
     </section>
 
+    <!-- Nội dung chính -->
     <section class="content">
         <div class="box">
             <div class="box-header with-border">
                 <div class="box-body">
+                    <!-- Form thêm mới menu -->
                     <form role="form" action="" method="POST">
-                        @csrf
+                        @csrf <!-- Token bảo vệ chống CSRF -->
+                        
                         <div class="row">
                             <div class="col-sm-8">
                                 <div class="form-group {{ $errors->has('mn_name') ? 'has-error' : '' }}">
@@ -28,6 +32,8 @@
                             </div>
                             <div class="col-sm-4"></div>
                         </div>
+                        
+                        <!-- Nút thao tác -->
                         <div class="box-footer text-center">
                             <a href="{{ route('admin.menu.index') }}" class="btn btn-danger">
                                 Quay lại <i class="fa fa-undo"></i>
